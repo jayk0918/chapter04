@@ -8,6 +8,8 @@ public class MyListApp {
 		
 		// ArrayList = 범용
 		ArrayList<Point> pList = new ArrayList<Point>();
+		// List<Point> pList = new ArrayList<Point>(); -> List를 인터페이스 / ArrayList를 하위로 하여 섞어쓰기하면 활용성 증가
+		
 		
 		Point p01 = new Point(3,5);
 		Point p02 = new Point(13,15);
@@ -43,7 +45,7 @@ public class MyListApp {
 		
 		// p04를 2번째(방번호 [1])에 추가
 		pList.add(p04);	// 맨 끝에 추가하는 방식
-		pList.add(1 , p04); // add ( (원하는 방번호) , (넣고자하는 변수) )
+		pList.add(1,p04); // add ( (원하는 방번호) , (넣고자하는 변수) )
 		
 		System.out.println(pList.toString());
 		// 여기서의 toString은 print처럼 가로로 출력됨
